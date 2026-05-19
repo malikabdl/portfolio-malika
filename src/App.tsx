@@ -165,6 +165,7 @@ const i18n = {
         heroDesc: 'Profesional IT yang dinamis dengan keahlian yang beragam dan komprehensif, berfokus pada SAP ABAP. Keterampilan kuat dalam Analisis, Pemecahan Masalah, dan Penyelesaian Pekerjaan untuk memastikan sistem SAP berjalan efisien dan sesuai dengan kebutuhan bisnis.',
         contactBtn: 'Hubungi Saya',
         expBtn: 'Lihat Pengalaman',
+        downBtn: 'Unduh CV',
         aboutTitle: 'Tentang Saya',
         profileTitle: '🎯 Profil',
         profileDesc: 'SAP ABAP Developer & Techno-Functional Consultant dengan pengalaman 7+ tahun. Berpengalaman dalam enhancement, development, troubleshooting, dan implementasi di modul SD, FICO, FM, dan HC. Terbiasa bekerja dengan tim implementor dan end-user.',
@@ -200,6 +201,7 @@ const i18n = {
         heroDesc: 'A dynamic IT professional with a diverse and comprehensive skill set, focused on SAP ABAP. Strong skills in Analysis, Problem Solving, and Work Completion to ensure SAP systems run efficiently and in accordance with business needs.',
         contactBtn: 'Contact Me',
         expBtn: 'View Experience',
+        downBtn: 'Download CV',
         aboutTitle: 'About Me',
         profileTitle: '🎯 Profile',
         profileDesc: 'SAP ABAP Developer & Techno-Functional Consultant with 7+ years of experience. Experienced in enhancement, development, troubleshooting, and implementation across SD, FICO, FM, and HC modules. Accustomed to working with implementors and end-users.',
@@ -363,6 +365,7 @@ const App = () => {
                 <div style={{ marginTop: '2rem', display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
                     <button className="hover-btn" onClick={() => scrollTo('contact')} style={{ background: t.accent, color: '#fff', border: 'none', padding: '0.8rem 2rem', borderRadius: 6, fontWeight: 600, cursor: 'pointer', fontSize: '1rem' }}>{L.contactBtn}</button>
                     <button className="hover-btn-outline" onClick={() => scrollTo('experience')} style={{ background: 'transparent', color: t.accent, border: `2px solid ${t.accent}`, padding: '0.8rem 2rem', borderRadius: 6, fontWeight: 600, cursor: 'pointer', fontSize: '1rem' }}>{L.expBtn}</button>
+                    <button className="hover-btn-outline" onClick={() => { const link = document.createElement('a'); link.href = './Resume Malik ABAP.pdf'; link.download = 'Malik Resume.pdf'; link.click(); }} style={{ background: 'transparent', color: t.accent, border: `2px solid ${t.accent}`, padding: '0.8rem 2rem', borderRadius: 6, fontWeight: 600, cursor: 'pointer', fontSize: '1rem' }}>{L.downBtn} </button>
                 </div>
                 <div className="hero-contact-row" style={{ color: t.heroSub }}>
                     <span>📍 Jakarta, Indonesia</span>
